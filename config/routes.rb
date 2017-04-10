@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get '/' => 'home#index'
   post '/item/add' => 'home#add'
   post '/item/add/ajax' => 'home#add_ajax'
+  post '/item/search' => 'home#search'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Seach Results </title>
+</head>
+<body>
+
+	<ol id="search_list">
+	<% @items.each do |item| %>
+	<li> <%= item.name %> </li>
+	<% end %>
+
+</body>
+</html>

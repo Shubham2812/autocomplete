@@ -16,4 +16,9 @@ class HomeController < ApplicationController
 			)
 		render json: item 
 	end
+
+	def search
+		items = Item.where("name like '%#{params[:search]}%' ")
+		render json: items
+	end
 end
