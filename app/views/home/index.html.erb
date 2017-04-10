@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home Page </title>
+</head>
+<body>
+	<%= form_tag '/item/add', id:  'add' do %>
+		<%= text_field_tag :name %>
+		<%= submit_tag 'Add Item' %>
+	<% end %>
+	<ol id="list">
+	<% @items.each do |item| %>
+	<li> <%= item.name %> </li>
+	<% end %>
+</body>
+</html>
